@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+        .top-bar {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .top-bar img {
+            margin-left: 20px;
+            height: 40px;
+        }
+        .top-bar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            flex-grow: 2;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 1000px;
+        }
+        iframe {
+            border: none;
+            flex-grow: 2;
+            max-width: 100%;
+            height: calc(100vh - 100px); /* 140px accounts for the top bar and footer */
+            max-height: 100%;
+        }
+        .footer {
+            width: 1465px;
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <img src="https://media.istockphoto.com/id/1413286466/vector/chat-bot-icon-robot-virtual-assistant-bot-vector-illustration.jpg?s=612x612&w=0&k=20&c=ZSG3eqGPDJgIgFUIuVxID64uVUF3eqM3LrrDWtaKses=" alt="Logo">
+        <h1>SCHOLARS HANDBOOK</h1>
+    </div>
+    <div class="container">
+        <iframe
+            allow="microphone;"
+            src="https://console.dialogflow.com/api-client/demo/embedded/f7b02456-efcf-4b2a-93ce-d7cb44ea3d63">
+        </iframe>
+    </div>
+    <div class="footer">
+        &copy; 2024 Iranzi Innocent. All rights reserved.
+    </div>
+</body>
+</html>
